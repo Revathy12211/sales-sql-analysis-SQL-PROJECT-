@@ -1,0 +1,18 @@
+# Sales Data Analysis (SQL Project)
+
+## Overview
+Analyzed sales dataset using SQL to identify trends, growth, and customer behavior.
+
+## Tools
+- SQL Server
+- SSMS
+
+## Key Insights
+- Revenue grew ~30% YoY
+- Peak sales in November (~$1M+)
+- Top 5 customers contribute ~20%
+- Product line contributes ~40%
+- MoM growth ranges -74% to +115%
+
+## Files
+- sales_analysis.sql
