@@ -1,31 +1,27 @@
-# 📊 Sales Data Analysis using SQL
+📊 Sales Performance Analysis using SQL
 
----
+🔍 Problem Statement
+The business wants to understand revenue trends, customer behavior, and product performance to identify growth opportunities and risks.
 
-## 🧾 Overview
-This project analyzes a sales dataset using SQL to uncover key business insights related to revenue trends, customer behavior, product performance, and growth patterns.
+🎯 Objective
+To analyze sales data and answer key business questions:
 
-The analysis focuses on identifying seasonality, revenue concentration, customer retention, and potential business risks.
+How is revenue growing over time?
+Are there seasonal patterns in sales?
+Is revenue dependent on a few customers or products?
+How strong is customer retention?
 
----
+🧠 Approach
+Used SQL (CTE, Window Functions, Aggregations,Case when)
+Performed time-based analysis (YoY, MoM)
+Evaluated customer and product contribution
+Identified trends and anomalies in sales
 
-## 🎯 Objectives
-- Analyze year-over-year (YoY) and month-over-month (MoM) growth
-- Identify peak sales periods and seasonal trends
-- Evaluate customer contribution and retention
-- Analyze product line performance
-- Assess revenue concentration and business risk
-
----
-
-## 🛠 Tools & Technologies
+🛠 Tools & Technologies
 - SQL Server
-- SQL (CTE, Window Functions, Aggregations)
 - SSMS (SQL Server Management Studio)
 
----
-
-## 📂 Dataset Description
+📂 Dataset Description
 The dataset contains sales transactions with the following key fields:
 - `ORDERNUMBER` – Unique order ID
 - `ORDERDATE` – Date of order
@@ -34,61 +30,30 @@ The dataset contains sales transactions with the following key fields:
 - `PRODUCTLINE` – Product category
 - `YEAR_ID`, `MONTH_ID` – Time dimensions
 
----
+📈 Key Insights
+Revenue grew by ~30–35% YoY, indicating strong business growth
+Sales peak in November, showing clear seasonal demand
+Top 5 customers contribute ~20% revenue → dependency risk
+One product line contributes ~40% → product concentration
+MoM growth is highly volatile (-74% to +115%)
+~68% customers are repeat buyers → strong retention
 
-## 📊 Key Analysis Performed
+⚠️ Business Impact
+Business is growing but depends on few customers/products
+Seasonal spikes can be leveraged for marketing
+Risk mitigation needed through diversification
 
-### 🔹 1. Sales Trend Analysis
-- Total revenue calculation
-- Year-wise and month-wise sales trends
+💡 Recommendations
+Expand customer base to reduce dependency
+Promote underperforming product lines
+Use seasonal trends for targeted campaigns
+Improve demand planning for volatility# 📊 Sales Data Analysis using SQL
 
-### 🔹 2. Growth Analysis
-- Year-over-Year (YoY) growth using `LAG`
-- Month-over-Month (MoM) growth analysis
+📁 Project Files
+- `salesanalysis.md` → Contains all SQL queries used in analysis  
 
-### 🔹 3. Customer Analysis
-- Top 5 customers by revenue
-- Repeat customer behavior analysis
-
-### 🔹 4. Product Analysis
-- Product line contribution to total revenue
-- Identification of top-performing product categories
-
-### 🔹 5. Time-Based Insights
-- Best month per year
-- Seasonal sales pattern detection
-
----
-
-## 🔥 Key Insights
-
-- Revenue grew by approximately **30–35% from 2003 to 2004**, indicating strong business expansion  
-- Sales peak consistently in **November (~$1M+)**, confirming strong year-end seasonal demand  
-- Revenue is heavily concentrated in **October–November**, highlighting seasonal dependency  
-- Top 5 customers contribute **~15–20% of total revenue**, indicating moderate customer concentration risk  
-- Leading product line contributes **~40% of total sales**, showing strong product dominance  
-- MoM growth ranges from **-74.57% to +115.28%**, indicating high sales volatility  
-- Approximately **68.5% of customers are repeat buyers (>2 orders)**, showing strong customer retention  
-- Revenue concentration across key customers and products introduces **potential business risk**
 
 ---
 
-## ⚠️ Business Recommendations
-
-- Diversify customer base to reduce dependency on top customers  
-- Expand product portfolio to reduce reliance on dominant product lines  
-- Leverage seasonal peaks (Nov–Dec) for targeted marketing campaigns  
-- Implement loyalty programs to maximize repeat customer value  
-- Improve demand planning to handle high sales volatility  
-
----
-
-## 📁 Project Files
-- `sales_analysis.sql` → Contains all SQL queries used in analysis  
-
----
-
-## 🚀 Conclusion
-The analysis highlights strong revenue growth and clear seasonal trends, along with high customer retention. However, revenue concentration and volatility suggest the need for strategic planning to ensure long-term business stability.
 
 ---
